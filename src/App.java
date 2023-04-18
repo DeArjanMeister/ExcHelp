@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,8 +10,7 @@ public class App {
     public App() {
         this.categories = new ArrayList<>();
     }
-
-public void start() {
+    public void start() {
     loadCategories();
     boolean keepPlaying = true;
     while (keepPlaying) {
@@ -82,5 +83,4 @@ public void start() {
     private void displayAnswer(Question question){
         System.out.println(question.getAnswer());
     }
-
 }

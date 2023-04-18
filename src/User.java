@@ -1,23 +1,8 @@
 import java.util.HashMap;
-import java.util.Scanner;
-public class Gebruiker {
-    private HashMap<String, String> users;
+
+public class User {
     private String email;
     private String password;
-    private Gebruiker gebruiker;
-
-
-    public Gebruiker(Gebruiker gebruiker) {
-        this.gebruiker = gebruiker;
-    }
-
-    public HashMap<String, String> getUsers() {
-        return users;
-    }
-
-    public void setUsers(HashMap<String, String> users) {
-        this.users = users;
-    }
 
     public String getEmail() {
         return email;
@@ -29,6 +14,10 @@ public class Gebruiker {
 
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
 
